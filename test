@@ -9,5 +9,5 @@ source clean
 docker build --tag=${TEST_IMAGE_NAME} .
 
 # Run a test container
-TEST_SCRIPT="python -c \"print('Test: Passed!')\" && python -V && python -m pip -V"
+TEST_SCRIPT="python3 -c \"print('Test: Passed!')\" && python3 -V && python3 -m pip -V"
 docker run  --rm -it --name ${TEST_CONTAINER_NAME} ${TEST_IMAGE_NAME} sh -c "${TEST_SCRIPT}"

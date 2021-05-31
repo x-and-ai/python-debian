@@ -16,9 +16,10 @@ This image will be used as the base for other Python3-based images, for example,
 |:----------:|:----------:|:----------:|
 | 1.0.0      | 3.5.3-1    | 9.8        |
 | 1.1.0      | 3.7.3      | 10.9       |
+| 1.1.1      | 3.7.3      | 10.9       |
 
 ## Usage
 
 ``` sh
-docker run --rm xandai/python-debian:1.1.0 python -c "print('Hello, world!')"
+docker run --rm xandai/python-debian:1.1.1 python3 -c "print('Hello, world!')"
 ```
