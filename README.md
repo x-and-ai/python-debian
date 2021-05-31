@@ -10,16 +10,19 @@ This is a Docker image for using Python 3 on Debian.
 
 This image will be used as the base for other Python3-based images, for example, a Jupyter Notebook image.
 
+Since v1.1.2, this image contains pylint and autopep8 for easier integration with vscode python linting and formatting
+
 ## Tags and Versions
 
-| tag        | python     | debian     |
-|:----------:|:----------:|:----------:|
-| 1.0.0      | 3.5.3-1    | 9.8        |
-| 1.1.0      | 3.7.3      | 10.9       |
-| 1.1.1      | 3.7.3      | 10.9       |
+|  tag  | python  | debian |
+| :---: | :-----: | :----: |
+| 1.1.2 |  3.7.3  |  10.9  |
+| 1.1.1 |  3.7.3  |  10.9  |
+| 1.1.0 |  3.7.3  |  10.9  |
+| 1.0.0 | 3.5.3-1 |  9.8   |
 
 ## Usage
 
-``` sh
-docker run --rm xandai/python-debian:1.1.1 python3 -c "print('Hello, world!')"
+```sh
+docker run --rm xandai/python-debian:1.1.2 python3 -c "print('Hello, world!')"
 ```
